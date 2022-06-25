@@ -1,101 +1,124 @@
-/* Bootstrap simplifies our workflow, but it's still helpful to add our own CSS */
-/* This file will include CSS to override Bootstrap defaults */
+/* This file includes CSS to override Bootstrap defaults */
 
 /* Typography */
 body{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Marck Script', serif;
 }
 .badge{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
 }
 
 /* Wordmark */
 #wordmark {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Marck Script', serif;
     font-size: 1.4em;
 }
 #wordmark span {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
     font-weight: 300;
     font-size: 1.4em;
-}
-#wordmark svg {
-    fill: #fff;
 }
 
 /* Hero */
 #hero{
-    background-image: url(../img/sabbath.jpg);
+    background-image: url(../img/vancouver.jpg);
     background-size: cover;
-    background-position: 50% 30%;
-    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: 75% 55%;
+    background-blend-mode: darken;
 }
 
-#humans #hero{
-    background-image: url(../img/human.jpg); 
+#process #hero{
+    background-image: url(../img/collage.jpg); 
+    background-size: 50%;
+    background-blend-mode: normal;
+    opacity: 70%;
 }
 
-#chumly #numbers{
-    background-image: url(../img/dandelions.jpg);
+#levelofskills{
+    background-image: url(../img/torontoislands.png);
     background-size: cover;
-    background-position: 50% 30%;
-    background-blend-mode: soft-light;
+    background-position: 80% 50%;
+    background-blend-mode: light;
 }
 
-#chumly #numbers .row{
-    background-color: #ffffff66;  /*rrggbbaa */
+#levelofskills .row{
+    background-color: #f1f3f3;  
+    opacity: 85%;
 }
 
-#chumly .progress{
+#about .progress{
     height: 100%;
 }
 
-#friends #hero {
+#tabular{
+    background-image: url(../img/cesky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-striped > tr:nth-child(odd){
+    background-color: green!important;
+}
+
+table tr{
+    padding: 20px!important;
+    margin: 20px!important;
+}
+
+#appeal{
+    background-image: url(../img/vancouver.jpg);
+    background-size: cover;
+    background-position: 80% 50%;
+    background-blend-mode: light;
+}
+
+#design #hero {
     background-image: none;
 }
 
-#friends #hero video{
+.bg-dark {
+    background-color: #bababa!important;
+}
+
+#design #hero video{
     object-fit: cover;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: hard-light;
+    opacity: 1!important;
+    background-color: transparent!important;
 }
 
-#friends #hero span.masha{
-    color: sienna;
-    background-color: #fff;
-}
-
-#friends #hero span.jack{
-    color: black;
-    background-color: #fff;
-}
-
-#friends .carousel-caption{
+#design .carousel-caption{
     background: #00000066;
 }
 
 /* Dark background */
-.bg-dark {
-    background-color: #382d44!important;
+.bg-light {
+    background-color: #eefaf7!important;
 }
 
 .dropdown-menu-dark {
-    background-color: #2e2538!important;
+    background-color: $gray-900;
 }
 
 .bg-secondary {
-    background-color: #978ca3!important;
+    background-color: #fff!important;
 }
 
 .dropdown-menu-dark .dropdown-item.active, 
 .dropdown-menu-dark .dropdown-item:active {
-    background-color: #59377e;
+    background-color: $gray-200;
 }
 
 
 .bg-info{
-    background-color: #e6dbac!important;
+    background-color: #ddf5f0!important;
+}
+
+.designprocess {
+padding: 25px!important;
 }
